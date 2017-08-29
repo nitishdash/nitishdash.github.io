@@ -7,7 +7,13 @@ $(document).ready(function(){
     $("#nitishdash").removeClass("animated rubberBand");
   });
 
+  $("#site_icon_github").mouseenter(function(){
+      $("#site_icon_github").addClass("animated rubberBand");
+  });
+  $("#site_icon_github").mouseleave(function(){
+    $("#site_icon_github").removeClass("animated rubberBand");
+  });
 
 
-  
+
 });

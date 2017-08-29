@@ -201,12 +201,12 @@ html {
   }
 
 .site__content {
-  -webkit-animation: bounceInUp 2s;
+  -webkit-animation: bounceInUp 1s;
   -webkit-animation-delay: .2s;
 }
 
   .site__content form {
-    -webkit-animation: bounceInUp 2s;
+    -webkit-animation: bounceInUp 1s;
     -webkit-animation-delay: .2s;
   }
 
@@ -230,6 +230,28 @@ html {
   $ICONS!!
 \*-----------------------------------*/
 
-.site__icons {
-  -webkit-animation: bounceIn 1.5s;
+
+.site_icon_github {
+  -webkit-animation: fadeIn 0.2s;
+  -webkit-animation-delay: 1.1s;
+}
+.site_icon_gitlab {
+  -webkit-animation: fadeIn 0.2s;
+  -webkit-animation-delay: 1.2s;
+}
+.site_icon_gmail {
+  -webkit-animation: fadeIn 0.2s;
+  -webkit-animation-delay: 1.3s;
+}
+.site_icon_gplus {
+  -webkit-animation: fadeIn 0.2s;
+  -webkit-animation-delay: 1.4s;
+}
+.site_icon_playstore {
+  -webkit-animation: fadeIn 0.2s;
+  -webkit-animation-delay: 1.5s;
+}
+.site_icon_wordpress {
+  -webkit-animation: fadeIn 0.2s;
+  -webkit-animation-delay: 1.6s;
 }
