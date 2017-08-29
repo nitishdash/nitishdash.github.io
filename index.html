@@ -1,41 +1,40 @@
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- <script src="stuff.js"></script> -->
+  <script src="stuff.js"></script>
   <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="style.css">
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <script>
-  $(document).ready(function(){
+    function testAnim(x) {
+      $('#nitishdash').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+      });
+    };
 
-    $("#thisOne").mouseenter(function(){
-        $("#thisOne").addClass("animated rubberBand");
+    $(document).ready(function(){
+      $('.js--triggerAnimation').click(function(e){
+        e.preventDefault();
+        var anim = $('.js--animations').val();
+        testAnim(anim);
+      });
+
+      $('.js--animations').change(function(){
+        var anim = $(this).val();
+        testAnim(anim);
+      });
     });
-    $("#thisOne").mouseleave(function(){
-      $("#thisOne").removeClass("animated rubberBand");
-    });
-    $("#text").click(function(){
-      $("#text").hide();
-    });
-
-
-
-  });
 
   </script>
 </head>
 <body>
 
-<h1 class="" id="thisOne">
-   <center>NITISH DASH</center>
-
-</h1>
-
-<br>
-<div id="text">
-random rext
-</div>
-
-</br>
-
+<header class="site__header island">
+  <div class="wrap">
+   <span id="nitishdash" style="display: block;" class=""><h1 class="site__title mega">NITISH DASH</h1></span>
+    <span class="beta subhead">Android, iOS, Web Developer. <i class="em em-heart"></i> to Code!</span>
+  </div>
+</header>
 
 </body>
 

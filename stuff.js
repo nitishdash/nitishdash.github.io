@@ -1,9 +1,13 @@
-$("#thisOne").mouseenter(function(){
-    $("#thisOne").addClass("animated rubberBand");
-});
-$("#thisOne").mouseleave(function(){
-  $("#thisOne").removeClass("animated rubberBand");
-});
-$("text").click(function(){
-  $("text").hide();
+$(document).ready(function(){
+
+  $("#nitishdash").mouseenter(function(){
+      $("#nitishdash").addClass("animated rubberBand");
+  });
+  $("#nitishdash").mouseleave(function(){
+    $("#nitishdash").removeClass("animated rubberBand");
+  });
+
+
+
+  
 });
