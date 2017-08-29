@@ -201,13 +201,13 @@ html {
   }
 
 .site__content {
-  -webkit-animation: bounceInUp 1s;
-  -webkit-animation-delay: .1s;
+  -webkit-animation: bounceInUp 2s;
+  -webkit-animation-delay: .2s;
 }
 
   .site__content form {
-    -webkit-animation: bounceInUp 1s;
-    -webkit-animation-delay: .1s;
+    -webkit-animation: bounceInUp 2s;
+    -webkit-animation-delay: .2s;
   }
 
 /*-----------------------------------*\
@@ -222,4 +222,14 @@ html {
   to {
     -webkit-filter: hue-rotate(-360deg);
   }
+}
+
+
+
+/*-----------------------------------*\
+  $ICONS!!
+\*-----------------------------------*/
+
+.site__icons {
+  -webkit-animation: bounceIn 1.5s;
 }
